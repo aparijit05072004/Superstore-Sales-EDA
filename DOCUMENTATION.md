@@ -1,6 +1,6 @@
 # Superstore Sales — Project Documentation
 
-## a. Project Aim / Goal
+## A. Project Aim / Goal
 
 The goal of this project is to perform a complete Exploratory Data Analysis (EDA) on a retail orders dataset (the "Sample Superstore" dataset, 2014–2017) in order to:
 
@@ -11,7 +11,7 @@ The goal of this project is to perform a complete Exploratory Data Analysis (EDA
 
 The underlying business question this dataset is built to answer: **where is the Superstore making money, where is it losing money, and what does that tell us about regions, product categories, customer segments, and shipping behavior?**
 
-## b. Dataset Description
+## B. Dataset Description
 
 Retail orders dataset, covering four years of order history (January 2014 – December 2017) for a fictional US superstore chain.
 
@@ -35,7 +35,7 @@ Two supporting sheets accompany the Orders data in the workbook:
 - **Returns** — a list of order IDs that were later returned (296 unique orders)
 - **People** — the regional manager responsible for each of the 4 regions
 
-## c. Cleaning Process
+## C. Cleaning Process
 
 The version of this dataset published in `data/superstore_raw_uncleaned.csv` reflects the kind of messiness a raw export from an order-management or e-commerce system typically contains. The following issues were identified and resolved during cleaning:
 
@@ -57,7 +57,7 @@ The version of this dataset published in `data/superstore_raw_uncleaned.csv` ref
 - `NORMAL OR BULK ORDER` — flags orders above a quantity threshold as bulk
 - `HIGH VAL. & NORM. CUST.` — flags customers above a lifetime-sales threshold as high-value
 
-## d. Final Result
+## D. Final Result
 
 The cleaned dataset (**Orders** sheet) contains **9,994 fully populated rows across 30 columns** — the original 21 raw fields plus 9 engineered analysis fields — with zero missing values and consistent formatting throughout.
 
@@ -71,14 +71,14 @@ From this cleaned data, the **PivotCharts** sheet builds pivot tables covering:
 
 These feed directly into the **Report** sheet — a single-page dashboard with 6 KPI cards and 6 charts (bar, line, horizontal bar, and radar) summarizing the business at a glance.
 
-## e. Outcome
+## E. Outcome
 
 - Delivered a fully cleaned, analysis-ready dataset with reliable, standardized fields suitable for further modeling or reporting.
 - Produced a reusable pivot-table layer that can be refreshed as new orders are added.
 - Built a single-page executive dashboard (KPI cards + 6 charts) that surfaces regional, seasonal, and category-level performance without needing to open the raw data.
 - Established a clear, repeatable cleaning process (documented above) that could be reapplied to future data drops from the same source system.
 
-## f. Insights
+## F. Insights
 
 **Overall performance**
 - Total Sales: **$2,297,200.86** | Total Profit: **$286,397.02** (a ~12.5% overall margin)
